@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import "./footer.css";
 
-class Adopted extends Component {
+class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -8,10 +9,10 @@ class Adopted extends Component {
   render() {
     return (
       <div>
-        <img src="https://imgur.com/z7MV9az"></img>
+        <img src="https://i.imgur.com/RFVOXuN.jpg" className="footer"></img>
       </div>
     );
   }
 }
 
-export default Adopted;
+export default Footer;

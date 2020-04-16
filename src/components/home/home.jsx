@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 
 class home extends Component {
   constructor(props) {

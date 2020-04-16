@@ -1,0 +1,50 @@
+.header {
+  width: 70vw;
+  position: fixed;
+  top: 3%;
+  height: 10vh;
+  left: 15%;
+  background-color: cornsilk;
+  border-radius: 10px;
+  box-shadow: black;
+}
+
+#buttonContainer {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+#homeBtn {
+  background-color: gray;
+  color: white;
+  border: none;
+  width: 25%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#adoptedBtn {
+  width: 25%;
+  height: 100%;
+  border: none;
+  background-color: red;
+}
+
+#lastBtnContainer {
+  width: 25%;
+  height: 100%;
+  background-color: red;
+}
+
+#checkoutBtn {
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: url("https://i.imgur.com/oYPqB7I.png");
+}
+
+#pkballIcon {
+  width: 2vw;
+}

@@ -12,7 +12,10 @@ class Header extends Component {
         <div id="buttonContainer">
           <button id="homeBtn">HOME</button>
           <button id="adoptedBtn">ADOPTED</button>
-          <button id="checkoutBtn">CHECKOUT</button>
+          <button id="checkoutBtn">
+            <img src="https://i.imgur.com/oYPqB7I.png" alt="" height="12" />
+            CHECKOUT
+          </button>
         </div>
       </div>
     );

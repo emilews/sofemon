@@ -1,0 +1,6 @@
+.grid {
+  width: 90%;
+  display: grid;
+  margin-top: 25px;
+  grid-template-rows: 1fr 1fr 1fr;
+}

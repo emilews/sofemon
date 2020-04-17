@@ -6,10 +6,6 @@ import Checkout from "../checkout/checkout";
 import Home from "../home/home";
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
     return (
       <div className="header">
@@ -27,19 +23,23 @@ class Header extends Component {
                 CHECKOUT
               </button>
             </Link>
-          <div>
-            <Switch>
-              <Route path="/adopted">
-                <Adopt />
-              </Route>
-              <Route path="/home">
-                <Home />
-              </Route>
-              <Route path="/checkout">
-                <Checkout />
-              </Route>
-            </Switch>
-          </div>
+            <div>
+              <Switch>
+                <Route path="/adopted">
+                  <Adopt />
+                </Route>
+                <Route path="/home">
+                  <Home
+                    pokemonshop={this.props.pokemonshop}
+                    cart={this.props.cart}
+                    listaPoke={this.props.myPokemon}
+                  />
+                </Route>
+                <Route path="/checkout">
+                  <Checkout cart={this.props.cart} />
+                </Route>
+              </Switch>
+            </div>
           </Router>
         </div>
       </div>

@@ -1,21 +1,43 @@
-import React from "react";
+import React, { Component } from "react";
 import "./PokemonCard.css";
+import colors from "../ColorTypes";
 
-class PokemonCard extends React.Component {
+class PokemonCard extends Component {
+  /* getinfoPokemon() {
+    return;
+  
   render() {
-    let typeP = this.props.pokemon.types[1].type.name;
+    let typeP = this.props.pokemon.types[0].type.name;
     if (this.props.pokemon.types[1])
       typeP = typeP + " + " + this.props.pokemon.types[1].type.name;
-
+*/ render() {
     return (
-      <div class="card">
-        <div class="card-image">
-          <img src={this.props.pokemon.sprites[4]} alt="" />
-        </div>
-        <h5 class="pokeName">{this.props.pokemon.name}</h5>
-        <h6 class="pokeType">{typeP}</h6>
-        <button class="adopt"> Adopt </button>
-      </div>
+      <React.Fragment>
+        <button
+          style={{ colors }}
+          className="card"
+          //
+          onClick={() => this.props.handleCart(this.props.pokemon)}
+        >
+          <div className="card-image">
+            <img src={this.props.pokemon.sprites.front_default} alt="" />
+          </div>
+          <div className="types">
+            {this.props.pokemon.types.map(type => {
+              return (
+                <div
+                  className="pokeType"
+                  style={{ backgroundColor: colors[type.type.name] }}
+                >
+                  {type.type.name}
+                </div>
+              );
+            })}
+          </div>
+          <div className="pokeName">{this.props.pokemon.name}</div>
+          <div className="ability">{this.props.pokemon.name}</div>
+        </button>
+      </React.Fragment>
     );
   }
 }

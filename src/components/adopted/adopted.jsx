@@ -8,7 +8,7 @@ class Adopted extends Component {
   render() {
     return (
       <div>
-        <img src="https://imgur.com/z7MV9az"></img>
+        <h1>Adopted</h1>
       </div>
     );
   }

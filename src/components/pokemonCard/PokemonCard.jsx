@@ -1,4 +1,5 @@
 import React from "react";
+import "./PokemonCard.css";
 
 class PokemonCard extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class PokemonCard extends React.Component {
         </div>
         <h5 class="pokeName">{this.props.pokemon.name}</h5>
         <h6 class="pokeType">{typeP}</h6>
+        <button class="adopt"> Adopt </button>
       </div>
     );
   }

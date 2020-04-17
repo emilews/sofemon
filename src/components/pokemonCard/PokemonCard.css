@@ -1,0 +1,20 @@
+.card {
+  width: 20vw;
+  height: 25vw;
+  justify-content: center;
+  margin: auto;
+  background-color: rgb(187, 187, 187);
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.card-image {
+  text-align: center;
+}
+
+.pokeName {
+  text-align: center;
+}
